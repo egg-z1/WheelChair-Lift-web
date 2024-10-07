@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Topbar from './components/topbar/topbar';
+import Sidebar from './components/sidebar/sidebar';
+import Echart1 from './components/echart/echart1';
+import Echart2 from './components/echart/echart2';
+import Echart3 from './components/echart/echart3';
+import Echart4 from './components/echart/echart4';
+import EchartWheel from './components/echart/echart_wheel';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Topbar />
+      <div className='container'>
+        <Sidebar />
+        <div className='others'>
+          <Echart1 />
+          <Echart2 />
+          <Echart3 />
+          <Echart4 />
+          <EchartWheel />
+        </div>
+      </div>
     </div>
   );
 }
