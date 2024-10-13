@@ -11,7 +11,7 @@ export default function EchartWheel() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const serviceKey = 'CFX%2FJfkezoSyKEFWonYDzkLnMEmmFdzxwSqRS57HaBvdfz6O18E8fu1O9oCQn5h2pDEHQ8kEvFNdbLHqTiXrFg%3D%3D';
+                const serviceKey = '';
                 const url = `https://api.odcloud.kr/api/15044262/v1/uddi:a5adef93-441b-4f2e-9edf-c58f9712801c?serviceKey=${serviceKey}&perPage=120`;
 
                 const response = await fetch(url);
